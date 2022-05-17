@@ -1,6 +1,7 @@
 require_relative 'module'
 require_relative 'app_screenshot'
 require_relative 'app_screenshot_validator'
+require_relative 'app_clip_header_image'
 require_relative 'upload_metadata'
 require_relative 'languages'
 
