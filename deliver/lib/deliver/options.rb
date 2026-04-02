@@ -484,6 +484,28 @@ module Deliver
                                      optional: true,
                                      default_value: true),
 
+        # App Clip default experience
+        FastlaneCore::ConfigItem.new(key: :app_clip_header_images_path,
+                                     env_name: "DELIVER_APP_CLIP_HEADER_IMAGES_PATH",
+                                     description: "Path to the directory containing localized App Clip header images",
+                                     optional: true,
+                                     type: String),
+        FastlaneCore::ConfigItem.new(key: :app_clip_default_experience_metadata_path,
+                                     env_name: "DELIVER_APP_CLIP_DEFAULT_EXPERIENCE_METADATA_PATH",
+                                     description: "Path to the directory containing localized App Clip default experience metadata (subtitles)",
+                                     optional: true,
+                                     type: String),
+        FastlaneCore::ConfigItem.new(key: :app_clip_default_experience_subtitle,
+                                     env_name: "DELIVER_APP_CLIP_DEFAULT_EXPERIENCE_SUBTITLE",
+                                     description: "Metadata: Localised App Clip default experience subtitle",
+                                     optional: true,
+                                     type: Hash),
+        FastlaneCore::ConfigItem.new(key: :app_clip_default_experience_action,
+                                     env_name: "DELIVER_APP_CLIP_DEFAULT_EXPERIENCE_ACTION",
+                                     description: "The action to use for the App Clip default experience (e.g. 'OPEN', 'VIEW', 'PLAY')",
+                                     optional: true,
+                                     type: String),
+
         # internal
         FastlaneCore::ConfigItem.new(key: :app,
                                      short_option: "-p",
